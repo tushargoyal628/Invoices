@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="static\\css\\stylessignup.css">
+    <script src="static\\js\\login_logout_homepage.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To Invoice Generator</h1>
+        <form class="search-form" id="search-form"autocomplete="off">
+            <label>Enter Your Name</label>
+            <input type="text" id="name" required>
+
+            <label>Enter Your Mobile Number</label>
+            <input type="mobilenumber" id="mobilenumber" required>
+
+            <label>Enter Your UserName</label>
+            <input type="text" id="username" required>
+
+            <label>Enter Your Emailid</label>
+            <input type="email" id="email" required>
+
+            <label>Enter Your Password</label>
+            <input type="password" id="password" required>
+
+            <button type="button" id="signup" onclick="signUP()">Signup</button>
+            <button type="button" id="forgotpass" onclick="returntoforgotpass()">Forgot Password</button>
+            <button type="button" id="sign" onclick="returntosignin()">Signin</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+{'customer_name': 'Tushar Goyal', 
+'customer_num': '+918630196705', 
+'customer_addr': '33/58b/18 Balkeshwar Road Geeta Nagar Kamla Nagar', 
+'customer_dop': '2023-12-23', 
+'customer_invoicenum': '', 
+'customer_pos': 'Agrq', 
+'supplycode': 'ND', 
+'doctype': 'Pdf', 
+'items': [{'itemName': 'bike', 'quantity': '7', 'price': '0100', 'gst': '18', 'totalAmount': '700.00'}, 
+	  {'itemName': 'kj', 'quantity': '2', 'price': '500', 'gst': '2.5', 'totalAmount': '1000.00'}], 
+'sgst': '75.50', 
+'cgst': '75.50', 
+'totalamount': '1700.00', 
+'totalsubamount': '1549.00', 
+'note1': 'given', 
+'note2': 'thanks'}
+
+uvicorn djangotest:app --reload
+
+#forgot password
+1.forgot password would insert a input tag for giving new password to user on clicking submit. done
+2.It would check database for match.if found update the pass there and alert password changed successfully. or alert user not found
+4.However when at least two of the three fields are filled then new password would be entered. done 
+5.If not alert to enter at least two fields. done
+6.change password button would appear and replace submit button. done 
+
+/handlesignup
+{
+    "name_of_user":"Tushar Goyal",
+    "mobileno":"7617712161",
+    "username":"1840075",
+    "emailid":"tushar1840075@akgec.ac.in",
+    "password":"12345",
+    "accformdate":"2024-12-31"
+}
+
+/changepassword
+{
+    "Username":"",
+    "Email":"",
+    "Mobileno":"",
+    "NewPassword":""
+}
+
+
+
+
+
+
+
+
+
+
+
+customer_name='Tushar Goyal' customer_num='+918630196705' customer_addr='33/58b/18 Balkeshwar Road Geeta Nagar Kamla Nagar' customer_dop='2023-12-23' customer_invoicenum='' customer_pos='Agrq' supplycode='ND' doctype='Pdf' items=[Items(itemName='bike', quantity='100', price='100', gst='2', totalAmount='10000.00'), Items(itemName='Bike', quantity='7', price='100', gst='18', totalAmount='700.00')] sgst='163.00' cgst='163.00' totalamount='10700.00' totalsubamount='10374.00' note1='Bike and Realme 9 pro 5g delivered car to be delivered' note2='all Paid in cash'

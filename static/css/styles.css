@@ -1,0 +1,98 @@
+.main-container{
+    display: flex;
+    font-size: 20px;
+
+}
+.left-box{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 45%;
+    margin-right: auto;
+    float: left;
+
+}
+.labels-right-box{
+    padding-left: 50px;
+}
+
+.right-box{
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    width: 45%;
+    float: right;
+}
+.labels-left-box{
+    padding-left: 50px;
+
+}
+
+.input-right{
+    position: absolute;
+    left: 400px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.input-left{
+    position: absolute;
+    right: 150px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.row-upper-container{
+    display: flex;
+    font-size: 20px;
+    color: rgb(39, 110, 43);
+}
+
+.row-boxes{
+    display: flex;
+    flex-direction: column;
+    width: 18.75%;
+    align-items: center;
+}
+.lower-container {
+    width: 400px;
+    margin: 20px;
+    
+}
+
+.row-lower-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.plus-btn, .delete-btn {
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.row-lower-container input{
+    flex: 1;
+    margin-right: 70px;
+    text-align: center;
+
+}
+span{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.submit, .clear, .search{
+    font-size: larger; 
+    margin-left: 150px; 
+}
+

@@ -1,0 +1,31 @@
+#title{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    background-color: brown;
+    }
+#input-cust-date{
+        width: 175px;
+        text-align: center;
+    }
+#select-supply{
+        width: 175px;
+        text-align: center;
+    }
+#select-doc{
+        width: 175px;
+        text-align: center;
+    }
+#notes1 ,#notes2, #sgst, #cgst, #subtotal, #totalamount{
+    font-size: 15px;
+    padding: 5px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#span-total-amount{
+    padding-left: 582px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Invoices</title>
+    <link rel="stylesheet" , href="static\\css\\stylessearch.css">
+    <script src="static\\js\\search.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-1">
+            <h1>Search Invoices</h1>
+            <form class="search-form" id="search-form">
+                <label for="invoice-code">Enter Invoice Code</label>
+                <input type="text" id="invoice-code" name="invoice-code" required>
+
+                <label for="purchase-date">Enter Date of Purchase</label>
+                <input type="date" id="purchase-date" name="purchase-date" required>
+
+                <button type="button" id="search" onclick="searchInvoice()">Search</button>
+                <button type="button" id="back" onclick="goBack()">Back</button>
+                <button type="button" id="clear" onclick="clearform()">Clear All</button>
+            </form>
+        </div>
+        <div class="container-2">
+            <img id="img">
+        </div>
+    </div>
+</body>
+
+</html>

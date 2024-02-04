@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="static//css//styles.css">
+    <link rel="stylesheet" href="static//css//styles2.css">
+    <script src="static//js//script.js"></script>
+</head>
+
+<body>
+    <form id="form">
+        <p id="title">Invoice Generator</p>
+        <div class="main-container">
+            <div class="left-box">
+                <div class="labels-right-box">
+                    <label>Enter Customer Name </label>
+                    <input type="text" class="input-right" id="input-cust-name" name="customername" required>
+                </div>
+                <br>
+                <div class="labels-right-box">
+                    <label>Enter Customer Contact Number </label>
+                    <input type="text" class="input-right" id="input-cust-no" name="customerno" required>
+                </div>
+                <br>
+                <div class="labels-right-box">
+                    <label>Enter Customer Address </label>
+                    <input type="text" class="input-right" id="input-cust-addr" required name="customeraddr">
+                </div>
+                <br>
+                <div class="labels-right-box">
+                    <label>Date Of Purchase </label>
+                    <input type="date" class="input-right" id="input-cust-date" required name="dateofpurchase">
+                </div>
+
+            </div>
+            <div class="right-box">
+                <div class="labels-left-box">
+                    <label>Invoice Number</label>
+                    <input type="text" class="input-left" id="input-invoice-num" readonly>
+                </div>
+                <br>
+                <div class="labels-left-box">
+                    <label>Place Of Supply</label>
+                    <input type="text" class="input-left" id="input-place-of-supply" required name="placeofsupply">
+                </div>
+                <br>
+                <div class="labels-left-box">
+                    <label>Supply Type Code</label>
+                    <select class="input-left" id="select-supply" name="suppycode">
+                        <option>ND</option>
+                        <option>NA</option>
+                        <option>NS</option>
+                    </select>
+                </div>
+                <br>
+                <div class="labels-left-box">
+                    <label>Document Type Code</label>
+                    <select class="input-left" id="select-doc" name="doctype">
+                        <option>Pdf</option>
+                        <option>Jpeg</option>
+                        <option>Png</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row-upper-container">
+            <div class="row-boxes">Item Name</div>
+            <div class="row-boxes">Quantity</div>
+            <div class="row-boxes">Price</div>
+            <div class="row-boxes">GST</div>
+            <div class="row-boxes">Total Amount</div>
+        </div>
+        <hr>
+        <div class="lower-container">
+            <div class="row-lower-container">
+                <button class="plus-btn" onclick="addRow()">+</button>
+                <input type="text" name="item[]" placeholder="Item Name" required>
+                <input type="text" name="quantity[]" placeholder="Quantity" required oninput="calculateTotal(this)">
+                <input type="text" name="price[]" placeholder="Price" required oninput="calculateTotal(this)">
+                <input type="text" name="gst[]" placeholder="GST" required oninput="calculateTotal(this)">
+                <input type="text" name="totalamount[]" placeholder="Total Amount" required readonly>
+                <button class="delete-btn" onclick="removeRow(this)">-</button>
+            </div>
+        </div>
+        <hr>
+        <span>Note1</span>
+        <input type="text" id="notes1" name="note1">
+
+        <span>SGST</span>
+        <input type="text" id="sgst" readonly>
+        <span>CGST</span>
+        <input type="text" id="cgst"readonly>
+        <span>Sub Total</span>
+        <input type="text" id="subtotal" readonly>
+        <br>
+
+        <span>Note2</span>
+        <input type="text" id="notes2" name="note2">
+        <span id="span-total-amount">
+            <span>Total Amount</span>
+            <input type="text" id="totalamount" readonly>
+            <br>
+        </span>
+        <hr>
+        <button class="submit" type="button" onclick="submitForm()">SUBMIT</button>
+        <button class="clear" type="button" onclick="clearform()">CLEAR</button>
+        <button class="search" type="button" onclick="searchform()">SEARCH INVOICES</button>
+    </form>
+</body>
+
+</html>
